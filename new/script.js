@@ -9,8 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul>
                  <div class="ppe-grid-container">
                     <div class="ppe-card-modal">
-                        <img src="PPE.jpg" alt="PPE">
+                        <img src="image/ppe.jpg" alt="PPE">
                         <p class="ppe-title">Personal Protective Equipment(PPE)</p>
+                         <p1><strong>1.เสื้อกาวน์</strong> </p1>
+                         <p1><strong>2.ถุงมือ</strong></p1>
+                         <p1><strong>3.แว่นตานิรภัย</strong></p1>
+                         <p1><strong>4.หน้ากากอนามัย</strong></p1>
+                         <p1><strong>5.รองเท้าแล็บ</strong></p1>
+                         <p1><strong>6.หมวกคุมผม</strong></p1>
                     </div>
                  </div>
                 </ul>
@@ -20,11 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'corrosive',
             modalTitle: '⚠️ กรดและด่างเข้มข้น (Corrosive Agents)',
             modalBody: `
-                <p>สารประเภทนี้มีฤทธิ์<strong>กัดกร่อนเนื้อเยื่อ</strong>ได้รุนแรง เช่น กรดซัลฟิวริก (H₂SO₄).</p>
-                <h3>หลักความปลอดภัยสำคัญ:</h3>
+                <p>สารประเภทนี้มีฤทธิ์<strong>กัดกร่อนเนื้อเยื่อ</strong>ได้รุนแรง เช่น <strong>กรดซัลฟิวริก (H₂SO₄).</strong></p>
                 <ol>
-                    <li><strong>การเจือจาง:</strong> ให้เติม <strong>กรดลงในน้ำ</strong> เสมอ อย่างช้า ๆ.</li>
-                    <li><strong>การถ่ายเท:</strong> ต้องทำใน <strong>ตู้ดูดควัน (Fume Hood)</strong> เท่านั้น.</li>
+                <div class="corrosive-grid-container">
+                    <div class="corrosive-card-modal">
+                        <img src="image/laboratory.jpg" alt="PPE">
+                        <p class="corrosive-title">หลักความปลอดภัยสำคัญ</p>
+                         <li><strong>การเจือจาง:</strong> ให้เติม <strong>กรดลงในน้ำ</strong> เสมอ อย่างช้า ๆ.</li>
+                         <li><strong>การถ่ายเท:</strong> ต้องทำใน <strong>ตู้ดูดควัน (Fume Hood)</strong> เท่านั้น.</li>
+                    </div>
+                 </div>
+
                 </ol>
             `
         },
@@ -35,22 +47,22 @@ document.addEventListener('DOMContentLoaded', () => {
             modalBody: `
                 <div class="symbol-grid-container">
                     <div class="symbol-card-modal">
-                        <img src="Flammable.jpg" alt="สารไวไฟ">
+                        <img src="image/Flammable.jpg" alt="สารไวไฟ">
                         <p class="symbol-title">สารไวไฟ (Flammable)</p>
                         <p>ของแข็ง ของเหลว หรือแก๊สที่สามารถลุกติดไฟได้ง่าย</p>
                     </div>
                     <div class="symbol-card-modal">
-                        <img src="Fatal_Toxic.jpg" alt="อันตรายถึงชีวิต">
+                        <img src="image/Fatal_Toxic.jpg" alt="อันตรายถึงชีวิต">
                         <p class="symbol-title">อันตรายถึงชีวิต (Fatal/Toxic)</p>
                         <p>สารที่เป็นพิษเฉียบพลัน อาจทำให้เสียชีวิตได้หากสัมผัส</p>
                     </div>
                     <div class="symbol-card-modal">
-                        <img src="Corrosive.jpg" alt="สารกัดกร่อน">
+                        <img src="image/Corrosive.jpg" alt="สารกัดกร่อน">
                         <p class="symbol-title">สารกัดกร่อน (Corrosive)</p>
                         <p>สามารถทำลายเนื้อเยื่อและกัดกร่อนโลหะได้รุนแรง</p>
                     </div>
                      <div class="symbol-card-modal">
-                        <img src="Irritant.jpg" alt="สารระคายเคือง">
+                        <img src="image/Irritant.jpg" alt="สารระคายเคือง">
                         <p class="symbol-title">สารระคายเคือง (Irritant)</p>
                         <p>ทำให้เกิดการระคายเคืองต่อผิวหนัง ดวงตา และระบบทางเดินหายใจ</p>
                     </div>

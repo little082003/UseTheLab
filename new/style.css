@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(backgroundwebsite.jpg);
+    background-image: url(image/background.jpg);
+    background-position: center center;
+    background-size: cover;
 
 }
 h1 {
@@ -57,13 +59,13 @@ h1 {
     /* color: #00796b; */    
 }
 #ppe-image{
-    background-image: url(Personal_Protective_Equipment.jpg);
+    background-image: url(image/Personal_Protective_Equipment.jpg);
 }
 #corrosive-image{
-    background-image: url(unnamed.jpg);
+    background-image: url(image/unnamed.jpg);
 }
 #Chemical-image{
-    background-image: url(Chemical_Symbols.png);
+    background-image: url(image/Chemical_Symbols.png);
 }
 
 
@@ -172,6 +174,23 @@ h1 {
     margin-bottom: 10px;
 }
 .ppe-title{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #c13131;
+}
+.corrosive-grid-container {
+    display: grid;
+    /* สร้าง 2 คอลัมน์ และปรับขนาดตามความเหมาะสม */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding-top: 15px;
+}
+.corrosive-card-modal img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 10px;
+}
+.corrosive-title{
     font-weight: bold;
     font-size: 1.1em;
     color: #c13131;
