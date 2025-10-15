@@ -7,10 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
             modalBody: `
                 <p>การสวมใส่ <strong>PPE (Personal Protective Equipment)</strong> เป็นด่านแรกของการป้องกันตนเอง:</p>
                 <ul>
+                 <div class="ppe-grid-container">
                     <div class="ppe-card-modal">
                         <img src="PPE.jpg" alt="PPE">
                         <p class="ppe-title">Personal Protective Equipment(PPE)</p>
                     </div>
+                 </div>
                 </ul>
                 <p><strong>❌ ข้อควรระวัง:</strong> ห้ามสวมรองเท้าแตะ และมัดผมให้เรียบร้อย!</p>`
         },

@@ -159,6 +159,13 @@ h1 {
     padding: 15px;
     text-align: center;
 }
+.ppe-grid-container {
+    display: grid;
+    /* สร้าง 2 คอลัมน์ และปรับขนาดตามความเหมาะสม */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding-top: 15px;
+}
 .ppe-card-modal img {
     width: 500px;
     height: 500px;
