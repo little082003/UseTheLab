@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(image/background.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+h1 {
+    font-size: 1.8rem;
+    color: #004d40;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+@media (max-width:768px){
+    h1 {
+        font-size: 2.2rem;
+    }
+    .card{
+        width: 90%;
+    }
+    .card:hover{
+        gap: 15px;
+    }
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-image {
+    height: 300px;
+    /* width: 100%;  */
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+   
+    /* background-color: #e0f2f1;  */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-size: 50px; */
+    /* color: #00796b; */    
+}
+#ppe-image{
+    background-image: url(image/Personal_Protective_Equipment.jpg);
+}
+#corrosive-image{
+    background-image: url(image/unnamed.jpg);
+}
+#Chemical-image{
+    background-image: url(image/Chemical_Symbols.png);
+}
+
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00796b;
+    margin: 0;
+}
+.card-description {
+    font-size: 0.9em;
+    color: #555;
+    padding: 0 15px;
+}
+
+/* ----- Modal (Popup) Styles ----- */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); 
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;  /* ขยายขนาดป๊อปอัพเล็กน้อย */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-body {
+    padding-top: 10px;
+    max-height: 60vh; /* จำกัดความสูงและให้ scroll ได้เมื่อเนื้อหาเยอะ */
+    overflow-y: auto;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close-btn:hover,
+.close-btn:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-title {
+    color: #004d40; /* เปลี่ยนสีเพื่อให้เข้ากับธีม */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0; /* เพิ่มเพื่อให้ชิดขอบบน */
+}
+
+/* --- สไตล์สำหรับสัญลักษณ์ในป๊อปอัพ --- */
+.symbol-grid-container {
+    display: grid;
+    /* สร้าง 2 คอลัมน์ และปรับขนาดตามความเหมาะสม */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding-top: 15px;
+}
+.symbol-card-modal {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+.symbol-card-modal img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.symbol-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #c13131;
+}
+.ppe-card-modal{
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+.ppe-grid-container {
+    display: grid;
+    /* สร้าง 2 คอลัมน์ และปรับขนาดตามความเหมาะสม */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding-top: 15px;
+}
+.ppe-card-modal img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 10px;
+}
+.ppe-title{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #c13131;
+}
+.corrosive-grid-container {
+    display: grid;
+    /* สร้าง 2 คอลัมน์ และปรับขนาดตามความเหมาะสม */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding-top: 15px;
+}
+.corrosive-card-modal img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 10px;
+}
+.corrosive-title{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #c13131;
+}

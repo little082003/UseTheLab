@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Safety Web Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>คู่มือการปฏิบัติการห้องแล็ป 🧪🔬</h1>
+
+<div class="container">
+
+    <div class="card" data-topic="ppe">
+        <div class="card-image" id="ppe-image"></div>
+        <p class="card-title">ชุดป้องกันภัยส่วนบุคคล (PPE)</p>
+        <p class="card-description">สวมใส่ให้ครบ ป้องกันอันตรายจากสารเคมีและความร้อน **(คลิกเพื่อดูรายละเอียด)**</p>
+    </div>
+
+    <div class="card" data-topic="corrosive">
+        <div class="card-image" id="corrosive-image"></div>
+        <p class="card-title">สัญลักษณ์สารเคมีอันตราย</p>
+        <p class="card-description">อันตรายกัดกร่อนร้ายแรง! จัดการด้วยความระมัดระวังสูงสุด **(คลิกเพื่อดูรายละเอียด)**</p>
+    </div>
+
+    <div class="card" data-topic="Chemical">
+        <div class="card-image" id="Chemical-image"></div>
+        <p class="card-title">สัญลักษณ์สารเคมี</p>
+        <p class="card-description">เรียนรู้และทำความเข้าใจสัญลักษณ์ความเป็นอันตรายต่างๆ **(คลิกเพื่อดูรายละเอียด)**</p>
+    </div>
+
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modalTitle" class="modal-title"></h2>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
